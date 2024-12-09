@@ -15,4 +15,4 @@ function Main.new (args)
 
 end
 
-Main.new()
+Main.new{}

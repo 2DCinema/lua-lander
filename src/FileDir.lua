@@ -1,5 +1,7 @@
 -- FileDir.lua
+-- Yeah, I don't remember what I was using LuaFileSystem for...
 local lfs = require("lfs")
+
 
 local FileDir = {}
 FileDir.__index = FileDir
@@ -35,5 +37,6 @@ function FileDir.new (args)
     os.execute(string.format("build.bat \"%s\" \"%s\"", versionNumber, string.match(self.path, "(.*)\\[^\\]*")))
 
 end
+
 
 return FileDir
